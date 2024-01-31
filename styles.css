@@ -19,7 +19,8 @@ header {
     top: 0;
     height: 8%;
     z-index: 1000;
-}    
+}
+
 
 nav{
     height: 100%;
@@ -162,6 +163,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%), url('2c.jpg') center/cover no-repeat; 
 }
 
 .overlay {
