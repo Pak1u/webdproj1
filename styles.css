@@ -264,3 +264,20 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+ #odo{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-left: 4em;
+    
+ }
+
+
+ .odo1,.odo2,.odo3 {
+    padding : 0.2em;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
+    font-size: 50px;
+
+
+ }
