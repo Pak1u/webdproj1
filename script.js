@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add("show");
-                }, index * 500); 
+                }, index * 500);
             });
         }
     });
@@ -86,3 +86,37 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const firstodo = document.querySelector(".odo1");
+    const secondodo = document.querySelector(".odo2");
+    const thirdodo = document.querySelector(".odo3");
+
+    const od1 = new Odometer({
+        el: firstodo,
+    })
+    // firstodo.innerHTML = 50;
+
+    const od2 = new Odometer({
+        el: secondodo,
+    })
+    // secondodo.innerHTML = 1000;
+
+    const od3 = new Odometer({
+        el: thirdodo,
+    })
+    // thirdodo.innerHTML = 100000;
+    window.addEventListener("scroll", () => {
+        let activated = false;
+        const elem = document.querySelector("#odo")
+        const dist = elem.getBoundingClientRect().top;
+        if (dist<window.innerHeight/2  && activated === false) {
+            console.log("hi");
+            firstodo.innerHTML = 50;
+            secondodo.innerHTML = 1000;
+            thirdodo.innerHTML = 100000;
+        }
+        activated = true;
+    });
+});
