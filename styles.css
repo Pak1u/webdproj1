@@ -29,7 +29,7 @@ nav{
     justify-content: space-evenly;
 
 }
-.home,.contact,.about{
+.home,.contact,.about,.project{
     height  : 100%;
     position: relative;
     width: 33.333%;
@@ -294,3 +294,17 @@ body {
     0% { background-position: 0% 100%; }
     100% { background-position: 200% 100%; }
   }
+
+.topdog{
+    height: 100vh;
+    width : 100vh;
+
+}
+ .master1,.master2,.master3,.master4{
+    height: max-content;
+    width : 100%;
+    margin : 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
