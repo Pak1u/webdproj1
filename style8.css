@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Adjust z-index for layering effect as needed */
+    z-index: 1;
+  }
+  
+  .layer1 {
+    /* Adjust background-attachment to 'fixed' for stronger effect */
+    background-attachment: fixed;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+  

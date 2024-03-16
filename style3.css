@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height:70vh;
+    width:70vh;
+    border: 20px #676767 solid;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px black;
+}
+.container2{
+    height:70vh;
+    width:70vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+li{
+    position:absolute;
+    height:100%;
+    top:0;
+    font-size: 2.5rem;
+}
+ul li:nth-child(1){
+    transform: rotate(30deg);
+}
+ul li:nth-child(2){
+    transform: rotate(60deg);
+}
+ul li:nth-child(3){
+    transform: rotate(90deg);
+}
+ul li:nth-child(3) div{
+    transform: rotate(-90deg);
+}
+ul li:nth-child(4){
+    transform: rotate(120deg);
+}
+ul li:nth-child(5){
+    transform: rotate(150deg);
+}
+ul li:nth-child(6){
+    transform: rotate(180deg);
+}
+ul li:nth-child(6) div{
+    transform: rotate(-180deg);
+}
+ul li:nth-child(7){
+    transform: rotate(-30deg);
+}
+ul li:nth-child(8){
+    transform: rotate(-60deg);
+}
+ul li:nth-child(9){
+    transform: rotate(-90deg);
+}
+ul li:nth-child(9) div{
+    transform: rotate(90deg);
+}
+ul li:nth-child(10){
+    transform: rotate(-120deg);
+}
+ul li:nth-child(11){
+    transform: rotate(-150deg);
+}
+ul li:nth-child(12){
+    transform: rotate(0deg);
+} 
+#second{
+    border-radius: 50px;
+    height:38%;
+    background-color: #232323;
+    width:5px;
+    transform-origin: 50% 100%;
+    top:12%;
+    position: absolute;
+    transform: rotate(0deg);
+}
+#minute{
+    border-radius: 50px;
+    height:34%;
+    background-color: #232323;
+    width:7.5px;
+    transform-origin: 50% 100%;
+    top:16%;
+    position: absolute;
+    transform: rotate(0deg);
+}
+#hour{
+    border-radius: 50px;
+    height:26%;
+    background-color: #232323;
+    width:10px;
+    transform-origin: 50% 100%;
+    top:24%;
+    position: absolute;
+    transform: rotate(0deg);
+}
+#circle{
+    height:4%;
+    width:4%;
+    border-radius: 50%;
+    background-color: #232323;
+}

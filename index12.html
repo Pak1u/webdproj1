@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Tip Calculator</h2>
+            <div class="inputs">
+                <label for="Bill">Bill</label>
+                <input type="text" id="Bill">
+                <label for="Tip">Tip %</label>
+                <input type="number" id="Tip" value="15" min="0">
+                <label for="people">No. of People</label>
+                <input type="number" id="people" value="1" min="1">
+                <input type="Submit" value="Calculate" onclick="calc()">
+            </div>
+        </div>
+        <div class="result">
+            <h3>Tip per person</h3>
+            <p id="totaltip">$0.00</p>
+            <h3>Total per person</h3>
+            <p id="total">$0.00</p>
+        </div>
+    </div>
+    <script src="app12.js"></script>
+</body>
+</html>
